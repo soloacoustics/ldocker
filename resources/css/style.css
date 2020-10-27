@@ -1,0 +1,87 @@
+h1, .title {
+    margin: 0;
+    padding: 0;
+    color: dodgerblue;
+    border-bottom: solid thin dodgerblue;
+    margin: 2rem 0;
+    font-weight: bold;
+    display: flex;
+}
+
+h2, .sub-title {
+    margin: 0;
+    padding: 0;
+    color: dodgerblue;
+    margin: 2rem 0 1rem;
+    font-weight: bold;
+    border: none;
+}
+
+.title__button-box {
+    color: gray;
+    margin-left: auto;
+}
+
+.title__button-box .--active {
+    border-color: dodgerblue;
+}
+
+.wrapper {
+    width: clamp(300px, 100%, 1000px);
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.header {
+    padding: 1rem 1rem 0;
+    display: flex;
+}
+
+.header>* {
+    margin: 1rem;
+    text-decoration: none;
+    color: gray;
+}
+
+.header>*:last-child {
+    margin-left: auto;
+}
+
+.header .router-link-exact-active {
+    pointer-events: none;
+    color: dodgerblue;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.tab {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    transform: translateY(1px);
+}
+
+.tab__item {
+    background-color: lightgrey;
+    border: 1px solid gray;
+    border-radius: 0.3rem 0.3rem 0 0;
+    padding: 0.5rem 1rem 0.4rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.tab__item--active {
+    background-color: white;
+    border-bottom: 1px solid white;
+}
+
+.panel {
+    border: solid 1px gray;
+    padding: 2rem;
+}
+
+.button {
+    cursor: pointer;
+}
